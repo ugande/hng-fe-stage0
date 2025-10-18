@@ -2,6 +2,9 @@
 
 A responsive, accessible Profile Card page built with semantic HTML, CSS, and JavaScript. This project fulfills all requirements for the HNG Stage 0 task.
 
+## 🚀 Live Demo
+
+[View Live Demo](https://hng-fe-stage0.vercel.app/) - https://hng-fe-stage0.vercel.app/
 ## Features
 
 **Semantic HTML**: Uses proper semantic elements (`<article>`, `<header>`, `<figure>`, `<nav>`, `<section>`)
