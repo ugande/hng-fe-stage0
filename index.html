@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Stage 0</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+            <figure class="profile-avatar">
+                <img src="/img/anim-mosque.png" alt="profile photo" data-testid="test-user-avatar">
+            </figure>
+            <div>
+                <h2 class="profile-name" data-testid="test-user-name">
+                    Daniel Michael
+                    <span>Frontend developer</span>
+                </h2>
+                <div class="profile-time" data-testid="test-user-time">Loading time...</div>
+            </div>
+        </header>
+        <div class="profile-content">
+            <div class="top-row">
+                <section class="profile-section">
+                    <h3>About Me</h3>
+                    <p class="profile-bio" data-testid="test-user-bio">I am a Frontend developer with a passion for
+                        creating beautiful, accessible web experiences. I specialize in React, HTML, CSS, Javascript,
+                        PHP and MySQL. When I'm not coding, you can find me reading, listening to gospel songs, taking a
+                        long walk.</p>
+                </section>
+                <section class="profile-section">
+                    <h3>Social links</h3>
+                    <nav class="profile-links" data-testid="test-user-social-links">
+                        <a href="https://twitter.com/lordugande" class="social-link" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a>
+                        <a href="https://github.com/ugande" class="social-link" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
+                        <a href="https://instagram.com/danielugande" class="social-link" target="_blank"
+                            rel="noopener noreferrer" data-testid="test-user-social-instagram">Instagram</a>
+                    </nav>
+                </section>
+            </div>
+            <div class="bottom-row">
+                <section class="profile-section">
+                    <h3>Hobbies</h3>
+                    <ul class="hobby-list" data-testid="test-user-hobbies">
+                        <li class="hobby-item">Reading horror novels</li>
+                        <li class="hobby-item">Singing</li>
+                        <li class="hobby-item">Traveling</li>
+                        <li class="hobby-item">Reading about web3 and blockchain</li>
+                        <li class="hobby-item">Board Games</li>
+                    </ul>
+                </section>
+                <section class="profile-section">
+                    <h3>Dislikes</h3>
+                    <ul class="dislike-list" data-testid="test-user-dislikes">
+                        <li class="dislike-item">Broken CSS</li>
+                        <li class="dislike-item">Slow websites</li>
+                        <li class="dislike-item">Inaccessible UI</li>
+                        <li class="dislike-item">Overly complex code</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    <script>
+        function updateTime() {
+            const timeElement = document.querySelector('[data-testid="test-user-time"]');
+            timeElement.textContent = Date.now();
+        }
+
+        updateTime();
+
+        // Update every 100ms
+        setInterval(updateTime, 100);
+    </script>
+</body>
+
+</html>
